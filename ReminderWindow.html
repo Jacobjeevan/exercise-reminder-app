@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\reminder.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Standup and Exercise for a while!</h3>
+        <br/>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <script>
+        var progress = setInterval(loadingBar, 1000);
+        var width = 0;
+        function loadingBar() {
+            width = width + 10;
+            document.getElementsByClassName("progress-bar")[0].attributes[2].value = "width: " + width + "%";
+            document.getElementsByClassName("progress-bar")[0].attributes[3].value = width.toString();
+        }
+        if (width == 100) {
+            clearInterval(progress);
+        }
+    </script>
+</body>
+
+</html>

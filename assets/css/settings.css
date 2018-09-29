@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.display-4 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.heading {
+    margin: 0px;
+    background: aquamarine;
+}
+
+
+select {
+    margin: 25px;
+    max-width: 300px;
+}
+
+label {
+    margin: auto 10px;
+}
+
+#quit {
+    margin-top: 50px;
+    margin-left: 20px;
+}
